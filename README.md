@@ -1,6 +1,14 @@
-# Projeto de Máquina de Turing com Múltiplas Fitas Reconhecedore de Número Primo
+# Projeto de Máquina de Turing com Múltiplas Fitas Reconhecedora de Número Primo
 
 Projeto desenvolvido como trabalho na disciplina de LFA (2017.2) no curso BCC da UFSCar
+
+## Índice
+
+1. [Introdução](#introdução)
+2. [Teoria](#teoria)
+3. [Descrição](#descrição)
+4. [Conclusão](#conclusão)
+5. [Referências Bibliográficas](#referências-bibliográficas)
 
 ## Introdução
 
