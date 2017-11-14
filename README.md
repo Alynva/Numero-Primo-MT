@@ -12,6 +12,12 @@ Projeto desenvolvido como trabalho na disciplina de LFA (2017.2) no curso BCC da
 
 ## Introdução
 
+<p align="center">
+    <img alt="Turing Machine" src="https://pagez.com/attachments/337/article/3508/e22a805a0cab3825ecddce1102553c02.gif" />
+    <br>
+    Imagem por <a href="https://medium.com/concerning-pharo/a-turing-machine-simulator-written-in-pharo-fda74e1a705b">Julien Delplanque no Medium</a>
+</p>
+
 ## Teoria
 
 `T = (Q, Σ, Γ, s, b, F, δ)`
