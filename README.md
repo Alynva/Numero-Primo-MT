@@ -1,5 +1,10 @@
 # Projeto de Máquina de Turing com Múltiplas Fitas Reconhecedore de Número Primo
+
 Projeto desenvolvido como trabalho na disciplina de LFA (2017.2) no curso BCC da UFSCar
+
+## Introdução
+
+## Teoria
 
 `T = (Q, Σ, Γ, s, b, F, δ)`
 
@@ -13,6 +18,8 @@ Projeto desenvolvido como trabalho na disciplina de LFA (2017.2) no curso BCC da
 
 `⊢`
 
+## Descrição
+
 - `Q = {q0, q1, q2}`
 - `Σ = {}`
 - `Γ = {0, 1, ¢, $}`
@@ -23,3 +30,7 @@ Projeto desenvolvido como trabalho na disciplina de LFA (2017.2) no curso BCC da
     - `δ(q0, {¢, 𝑎, 𝑏}) = (q1, {¢, 𝑎, 𝑏}, →)`
     - `δ(q1, {𝑎, 𝑏, 𝑐}) = (q1, {𝑎, 𝑏, 𝑎}, →)`
     - `δ(q1, {$, 𝑎, 𝑏}) = (q1, {$, 𝑎, 𝑏}, ←)`
+
+## Conclusão
+
+## Referências bibliográficas
