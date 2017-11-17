@@ -43,6 +43,7 @@ Este algoritmo se baseia em subtrações sucessivas do número desejado até que
 1. Escrever o divisor `(2)_10 = (10)_2` na 2ª trilha;
 2. Repetir o número da 1ª trilha na 3ª trilha;
 3. Subtrair tantas vezes quanto for possível o número da 2ª trilha do número da 3ª trilha, guardando os resultados na 3ª trilha;
+
 - Se o resultado na 3ª trilha for diferente de 0, deve-se incrementar o divisor (número na 2ª trilha) e retornar para (2.);
 - Se o resultado na 3ª trilha for igual à 0:
     - se o número da 1ª trilha for igual ao número da 2ª trilha, portanto o número da 1ª trilha **é primo**;
@@ -89,7 +90,7 @@ onde `x` pode assumir `0` ou `1`, `y` e `z` podem assumir `¬`, `0` ou `1` e `A`
 1. `δ([r_0, A], [x, y, z]) = ([r_0, A], [x, y, z], →)`
 2. `δ([r_0, A], [$, y, z]) = ([r_1, A], [$, y, z], ←)`
 
-com as mesmas variáveis utilizadas anteriormente.
+com as mesmas variáveis utilizadas anteriormente, que serão utilizadas no restante do documento.
 
 #### MT Principal
 
@@ -124,12 +125,8 @@ Seguindo o algoritmo:
     11. `δ([s_2, A], [x, 0, 1]) = ([s_2, A], [x, 0, 0], ←)`
     12. `δ([s_2, A], [x, ¬, 1]) = ([s_2, A], [x, ¬, 0], ←)`
     13. `δ([s_1, A], [¢, ¬, ¬]) = ([s_3, A], [¢, ¬, ¬], →)`
+
 - Verificar 3ª trilha [...]
-
-
-1. `δ(q0, {¢, 𝑎, 𝑏}) = (q1, {¢, 𝑎, 𝑏}, →)`
-2. `δ(q1, {𝑎, 𝑏, 𝑐}) = (q1, {𝑎, 𝑏, 𝑎}, →)`
-3. `δ(q1, {$, 𝑎, 𝑏}) = (q1, {$, 𝑎, 𝑏}, ←)`
 
 ## Conclusão
 
