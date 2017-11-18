@@ -97,22 +97,22 @@ com as mesmas variáveis utilizadas anteriormente, que serão utilizadas no rest
 Seguindo o algoritmo:
 
 1. Escrever `(10)_2` na 2ª trilha
-    Primeiramente, precisamos fazer com que o controle finito vá para o final do número, pela transição:
+    <br><br>Primeiramente, precisamos fazer com que o controle finito vá para o final do número, pela transição:
     1. `δ([q_0, a], [¢, y, z]) = ([r_0, a], [¢, y, z], →)`
-    Agora, utilizando dois estados, insere o valor:
+    <br><br>Agora, utilizando dois estados, insere o valor:
     1. `δ([r_1, a], [x, y, z]) = ([q_1, a], [x, 0, z], ←)`
     1. `δ([q_1, a], [x, y, z]) = ([q_2, a], [x, 1, z], ←)`
 1. Repetir 1ª trilha na 3ª
-    Novamente, precisamos mover o controle finito para o começo ou para o fim do número, como já possuímos uma sub-rotina que leva-o para o final, começaremos a preencher a partir do final do número:
+    <br><br>Novamente, precisamos mover o controle finito para o começo ou para o fim do número, como já possuímos uma sub-rotina que leva-o para o final, começaremos a preencher a partir do final do número:
     1. `δ([q_2, a], [x, y, z]) = ([r_0, b], [x, y, z], →)`
-    Neste ponto somos capazes de começar a cópia:
+    <br><br>Neste ponto somos capazes de começar a cópia:
     1. `δ([r_1, b], [x, y, z]) = ([q_3, b], [x, y, x], ←)`
     1. `δ([q_3, b], [x, y, z]) = ([q_3, b], [x, y, x], ←)`
     1. `δ([q_3, b], [¢, y, z]) = ([s_0, c], [¢, y, z], →)` (já chama o próximo passo)
 1. Subtrair 2ª trilha da 3ª (sub-rotina _SUBTRAI_)
-    Seguindo o algoritmo de subtração binária apresentado em aula, precisamos partir do dígito menos significativo, portanto chamaremos novamente a sub-rotina _MOVE_:
+    <br><br>Seguindo o algoritmo de subtração binária apresentado em aula, precisamos partir do dígito menos significativo, portanto chamaremos novamente a sub-rotina _MOVE_:
     1. `δ([s_0, A], [x, y, z]) = ([r_0, A], [x, y, x], →)`
-    A partir deste ponto, começa a ser realizada a subtração:
+    <br><br>A partir deste ponto, começa a ser realizada a subtração:
     1. `δ([r_1, A], [x, 0, z]) = ([s_1, A], [x, 0, x], ←)`
     1. `δ([s_1, A], [x, 0, z]) = ([s_1, A], [x, 0, x], ←)`
     1. `δ([s_1, A], [x, ¬, z]) = ([s_1, A], [x, ¬, x], ←)`
